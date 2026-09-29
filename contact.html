@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twin Cities Animal Rescue - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Contact Twin Cities Animal Rescue</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Volunteer or Foster Interest</h2>
+            <p>
+                Interested in helping animals in our community? Complete the
+                form below to tell us a little about yourself and how you
+                would like to help.
+            </p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Your Information</legend>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <br><br>
+
+                    <label for="interest">I am interested in:</label>
+                    <select id="interest" name="interest" required>
+                        <option value="">-- Please choose an option --</option>
+                        <option value="volunteer">Volunteering</option>
+                        <option value="foster">Fostering</option>
+                        <option value="adoption">Adoption Information</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="availability">Availability:</label>
+                    <select id="availability" name="availability" required>
+                        <option value="">-- Please choose an option --</option>
+                        <option value="weekday">Weekdays</option>
+                        <option value="weekend">Weekends</option>
+                        <option value="both">Weekdays and Weekends</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="experience">Experience with Pets:</label>
+                    <textarea id="experience" name="experience"
+                              rows="4" cols="40"
+                              placeholder="Tell us about your experience with pets."
+                              required></textarea>
+
+                    <br><br>
+
+                    <label for="message">Short Message:</label>
+                    <textarea id="message" name="message"
+                              rows="4" cols="40"
+                              placeholder="Tell us anything else you would like us to know."
+                              required></textarea>
+
+                    <br><br>
+
+                    <button type="submit">Submit Interest</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section>
+            <h2>Service Area</h2>
+            <p>
+                Twin Cities Animal Rescue serves communities throughout the
+                Twin Cities metropolitan area and surrounding neighborhoods.
+            </p>
+
+            <h2>Office Hours</h2>
+            <p>
+                Monday - Friday: 9:00 a.m. - 5:00 p.m.
+            </p>
+            <p>
+                Saturday: 10:00 a.m. - 2:00 p.m.
+            </p>
+            <p>
+                Sunday: Closed
+            </p>
+        </section>
+
+        <section>
+            <h2>A Message From Our Team</h2>
+            <video controls width="600">
+                <source src="assets/rescue-message_c.mp4" type="video/mp4"> <!-- unsure what to do with the mp3 using just html -->
+                Your browser does not support the video element. Please contact
+                Twin Cities Animal Rescue to learn more about our volunteer and
+                foster programs.
+            </video>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Twin Cities Animal Rescue</p>
+        <img src="assets/rescue-logo_c.png" alt="Twin Cities Animal Rescue logo">
+    </footer>
+
+</body>
+</html>
