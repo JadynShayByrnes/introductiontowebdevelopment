@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twin Cities Animal Rescue - Contact</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -30,17 +31,19 @@
                 would like to help.
             </p>
 
-            <form action="#" method="post">
+            <form id="interest-form" action="#" method="post">
                 <fieldset>
                     <legend>Your Information</legend>
 
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
+                    <p id="name-error" class="error-message"></p>
 
                     <br><br>
 
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
+                    <p id="email-error" class="error-message"></p>
 
                     <br><br>
 
@@ -65,23 +68,18 @@
                     <br><br>
 
                     <label for="experience">Experience with Pets:</label>
-                    <textarea id="experience" name="experience"
-                              rows="4" cols="40"
-                              placeholder="Tell us about your experience with pets."
-                              required></textarea>
+                    <textarea id="experience" name="experience" rows="4" cols="40" placeholder="Tell us about your experience with pets." required></textarea>
 
                     <br><br>
 
                     <label for="message">Short Message:</label>
-                    <textarea id="message" name="message"
-                              rows="4" cols="40"
-                              placeholder="Tell us anything else you would like us to know."
-                              required></textarea>
-
+                    <textarea id="message" name="message" rows="4" cols="40" placeholder="Tell us anything else you would like us to know." required></textarea>
+                    <p id="message-error" class="error-message"></p>
                     <br><br>
 
                     <button type="submit">Submit Interest</button>
                 </fieldset>
+                <p id="form-success"></p>
             </form>
         </section>
 

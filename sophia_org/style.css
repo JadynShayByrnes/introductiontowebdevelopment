@@ -158,6 +158,14 @@ footer img {
     margin-bottom: 0.5rem;
 }
 
+.error-message {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 0.25rem;
+    font-weight: bold;
+}
+
 @media (min-width: 700px) {
     header {
         padding: 1.5rem 2rem;
